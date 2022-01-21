@@ -1,0 +1,6 @@
+[bandit]
+targets = backend/
+recursive = true
+skips = B101
+
+exclude = /tests

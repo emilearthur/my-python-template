@@ -1,0 +1,71 @@
+{
+    "editor.formatOnSave": true,
+    "python.pythonPath": "/home/emilextrig/miniconda3/envs/ml/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.banditEnabled": true,
+    "python.linting.mypyEnabled": false,
+    "python.linting.pydocstyleEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.banditArgs": [
+        "-s",
+        "B101",
+        "B105",
+        "-f",
+        "csv",
+    ],
+    "python.linting.flake8Args": [
+        "--max-line-length=160",
+        "--ignore=E402,W504,D212",
+        "--verbose"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/emilextrig/workspace/occuppy-core/backend"
+    ],
+    "python.linting.pydocstyleArgs": [
+        "--ignore=D400",
+        "--ignore=D4",
+        "--ignore=D203"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=120"
+    ],
+    "[python]": {
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.wordBasedSuggestions": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "editor.fontLigatures": false,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "--no-cov",
+        "${workspaceFolder}",
+    ],
+    "python.testing.pytestPath": "pytest",
+    "python.testing.cwd": "${workspaceFolder}",
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "requestCert": false,
+                    "rejectUnauthorized": false,
+                    "cert": ""
+                }
+            },
+            "previewLimit": 50,
+            "server": "ec2-52-204-72-14.compute-1.amazonaws.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "occuppy_staging_db",
+            "database": "dehtn2kfkie3r0",
+            "username": "tmynqaynniyuuk",
+            "password": "b92d0c811218591ddf4d854c014c8b0c03e470d9c5dce06fd5988ba40e7e1b1e"
+        }
+    ],
+}
